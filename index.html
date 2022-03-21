@@ -12,12 +12,45 @@
 <body>
     <div id="wrapper">
         <div id="header">8 PUZZLE USANDO BFS Y DFS</div>
+        <div id="variables">
+            <form action="#">
+                <p>Ingrese el estado inicial: </p>
+                <div class="estados-div">
+                    <input class="estados" type="number" name="inicial[]" value="" id="i1"/><br>
+                    <input class="estados" type="number" name="inicial[]" value="" id="i2"/><br>
+                    <input class="estados" type="number" name="inicial[]" value="" id="i3"/><br>
+                    <input class="estados" type="number" name="inicial[]" value="" id="i4"/><br>
+                    <input class="estados" type="number" name="inicial[]" value="" id="i5"/><br>
+                    <input class="estados" type="number" name="inicial[]" value="" id="i6"/><br>
+                    <input class="estados" type="number" name="inicial[]" value="" id="i7"/><br>
+                    <input class="estados" type="number" name="inicial[]" value="" id="i8"/><br>
+                    <input class="estados" type="number" name="inicial[]" value="" id="i9"/><br>
+                </div>
 
+                <p>Ingrese el estado Final: </p>
+                <div class="estados-div">
+                    <input class="estados" type="text" name="final[]" value="" id="f1"/><br>
+                    <input class="estados" type="text" name="final[]" value="" id="f2"/><br>
+                    <input class="estados" type="text" name="final[]" value="" id="f3"/><br>
+                    <input class="estados" type="text" name="final[]" value="" id="f4"/><br>
+                    <input class="estados" type="text" name="final[]" value="" id="f5"/><br>
+                    <input class="estados" type="text" name="final[]" value="" id="f6"/><br>
+                    <input class="estados" type="text" name="final[]" value="" id="f7"/><br>
+                    <input class="estados" type="text" name="final[]" value="" id="f8"/><br>
+                    <input class="estados" type="text" name="final[]" value="" id="f9"/><br>
+                </div>
+                <button type="button" name="guardarFinal" onclick="setEstados()">
+                    Guardar
+                </button>
+
+                <input type="submit" onclick="main()" value="Resolver">
+            </form>
+            <!--<button id="resolver" onclick="main()">Resolver</button>-->
+        </div>
         <div id="output">
         </div>
     </div>
-
-    <script src="./app.js" charset="utf-8"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,26 @@
-* {
+* { 
     font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;   
+}
+body{
+    height: 800px;
+    background-image: url(" https://img.favpng.com/14/2/15/hello-kitty-stratocaster-desktop-wallpaper-wallpaper-png-favpng-MJPHikRVxx5wADfWYJhfn23rZ.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
 }
 
 #header {
-    background: #16C;
+    background: rgb(216, 132, 195);
     padding: 20px;
     font-size: 30px;
-    color: #FFF;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /*background-image: url("https://images4.alphacoders.com/135/135538.jpeg");*/
 }
 
 #output {
@@ -29,11 +40,11 @@
 
 .node>.node_item {
     padding: 10px;
-    background: rgb(48, 69, 94);
+    background: rgb(235, 203, 228);
 }
 
 .right_arrow {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: bold;
     position: absolute;
@@ -43,13 +54,28 @@
 }
 
 .node:first-child>.node_item {
-    background: rgb(26, 46, 158);
+    background: rgb(144, 94, 173);
 }
 
 .node:last-child>.node_item {
-    background: rgb(33, 112, 40);
+    background: rgb(37, 22, 77);
 }
 
 .node:last-child>.right_arrow {
     display: none;
+}
+.estados{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    width: 30px;
+    position: relative;
+    margin: 2px;
+
+}
+.estados-div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
 }

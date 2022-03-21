@@ -68,7 +68,7 @@ body{
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2px;
-    width: 30px;
+    width: 40px;
     position: relative;
     margin: 2px;
 
@@ -77,5 +77,23 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-
 }
+.btn{
+    background-color: #c0189c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }

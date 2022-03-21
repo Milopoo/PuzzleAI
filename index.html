@@ -16,39 +16,49 @@
             <form action="#">
                 <p>Ingrese el estado inicial: </p>
                 <div class="estados-div">
-                    <input class="estados" type="number" name="inicial[]" value="" id="i1"/><br>
-                    <input class="estados" type="number" name="inicial[]" value="" id="i2"/><br>
-                    <input class="estados" type="number" name="inicial[]" value="" id="i3"/><br>
-                    <input class="estados" type="number" name="inicial[]" value="" id="i4"/><br>
-                    <input class="estados" type="number" name="inicial[]" value="" id="i5"/><br>
-                    <input class="estados" type="number" name="inicial[]" value="" id="i6"/><br>
-                    <input class="estados" type="number" name="inicial[]" value="" id="i7"/><br>
-                    <input class="estados" type="number" name="inicial[]" value="" id="i8"/><br>
-                    <input class="estados" type="number" name="inicial[]" value="" id="i9"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i1" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i2" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i3" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i4" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i5" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i6" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i7" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i8" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="inicial[]" id="i9" min="0" max="8"/><br>
                 </div>
-
-                <p>Ingrese el estado Final: </p>
-                <div class="estados-div">
-                    <input class="estados" type="text" name="final[]" value="" id="f1"/><br>
-                    <input class="estados" type="text" name="final[]" value="" id="f2"/><br>
-                    <input class="estados" type="text" name="final[]" value="" id="f3"/><br>
-                    <input class="estados" type="text" name="final[]" value="" id="f4"/><br>
-                    <input class="estados" type="text" name="final[]" value="" id="f5"/><br>
-                    <input class="estados" type="text" name="final[]" value="" id="f6"/><br>
-                    <input class="estados" type="text" name="final[]" value="" id="f7"/><br>
-                    <input class="estados" type="text" name="final[]" value="" id="f8"/><br>
-                    <input class="estados" type="text" name="final[]" value="" id="f9"/><br>
-                </div>
-                <button type="button" name="guardarFinal" onclick="setEstados()">
+                <button class="btn" type="button" name="guardarI" onclick="guardarInicial()">
                     Guardar
                 </button>
 
-                <input type="submit" onclick="main()" value="Resolver">
+                <p>Ingrese el estado Final: </p>
+                <div class="estados-div">
+                    <input class="estados" type="number" name="final[]" id="f1" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="final[]" id="f2" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="final[]" id="f3" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="final[]" id="f4" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="final[]" id="f5" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="final[]" id="f6" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="final[]" id="f7" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="final[]" id="f8" min="0" max="8"/><br>
+                    <input class="estados" type="number" name="final[]" id="f9" min="0" max="8"/><br>
+                </div>
+                <button class="btn" type="button" name="guardarF" onclick="guardarFinal()">
+                    Guardar
+                </button>
+                <button class="btn" type="button" name="solve" onclick="main()">
+                    Resolver
+                </button>
+                <!--<input type="submit" onclick="main()" value="Resolver">-->
             </form>
             <!--<button id="resolver" onclick="main()">Resolver</button>-->
         </div>
         <div id="output">
         </div>
+
+    </div>
+    <div id="NumeroEstadosTotales">
+    </div>
+    
     </div>
     <script src="app.js"></script>
 </body>

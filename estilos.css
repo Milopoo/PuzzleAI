@@ -97,3 +97,6 @@ body{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
   }
+  #NumeroEstadosTotales{
+      background-color: #ffd211;
+  }

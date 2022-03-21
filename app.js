@@ -2,8 +2,7 @@
 var EstadoInicial = [];
 var EstadoFinal = [];
 
-/*function setEstados(){
-*/
+//Estado inicial variables
     let in1 = document.getElementById("i1");
     let in2 = document.getElementById("i2");
     let in3 = document.getElementById("i3");
@@ -13,17 +12,9 @@ var EstadoFinal = [];
     let in7 = document.getElementById("i7");
     let in8 = document.getElementById("i8");
     let in9 = document.getElementById("i9");
-    /*iniciales.push(in1);
-    iniciales.push(in2);
-    iniciales.push(in3);
-    iniciales.push(in4);
-    iniciales.push(in5);
-    iniciales.push(in6);
-    iniciales.push(in7);
-    iniciales.push(in8);
-    iniciales.push(in9);
-    console.log(iniciales);
-*/
+  
+//Estado final variables
+
    let fn1 = document.getElementById("f1");
    let fn2 = document.getElementById("f2");
    let fn3 = document.getElementById("f3");
@@ -33,19 +24,7 @@ var EstadoFinal = [];
    let fn7 = document.getElementById("f7");
    let fn8 = document.getElementById("f8");
    let fn9 = document.getElementById("f9");
-   /*finales.push(fn1);
-   finales.push(fn2);
-   finales.push(fn3);
-   finales.push(fn4);
-   finales.push(fn5);
-   finales.push(fn6);
-   finales.push(fn7);
-   finales.push(fn8);
-   finales.push(fn9);
-   console.log(finales);*/
-
-    /*return [iniciales, finales];
-}*/
+   
 
 let guardarInicial = function(){
 
@@ -188,6 +167,12 @@ function main () {
 
         output.innerHTML = t;
         
+        let EstTotales = '';
+        EstTotales += '<div class = "Totales">'; 
+        EstTotales += '<p>Estados Totales: </p>' + NodosVisitados.length + '</div>';
+
+        NumeroEstadosTotales.innerHTML = EstTotales;
+
         console.log(NodosVisitados.length);
         return;
     } else {

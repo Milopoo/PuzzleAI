@@ -54,20 +54,7 @@ function guardarFinal(){
     console.log(EF);
     return EF;
 }
-/*let Ini = [
-    1, 0, 4,
-    2, 6, 3, // 0 para nulo
-    8, 5, 7
-];
-console.log(Ini);
 
-let Fin = [
-    1, 6, 4,
-    2, 3, 7,
-    8, 5, 0
-];
-console.log(Fin);*/
-//Nodos
 let allNodes = {};
 
 // Funciones de Movimiento

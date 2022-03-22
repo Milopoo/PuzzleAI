@@ -135,7 +135,7 @@ function main () {
 
     childNodes.forEach(item => {
         if (JSON.stringify(Cola).indexOf(JSON.stringify(item)) == -1) {
-            // Si no esta en la cola, se inserta en cola y en los no visitados 
+            // Si no esta en la cola, se inserta en cola y los que no en visitados 
             if (JSON.stringify(NodosVisitados).indexOf(JSON.stringify(item)) == -1) {
                 Cola.push(item);
                 console.log(Cola);
